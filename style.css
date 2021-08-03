@@ -1,0 +1,28 @@
+@font-face {
+    font-family:ambleregular, Verdana, Geneva, Tahoma, sans-serif;
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    /* Propriétés CSS normales ici */
+}
+
+article
+{
+    color: brown;
+}
+
+@media screen and (max-width: 1280px)
+{
+    /* Rédigez vos propriétés CSS 1280 ici */
+}
+
+@media screen and (max-width: 480px)
+{
+    /* Rédigez vos propriétés CSS 480 ici */
+}
