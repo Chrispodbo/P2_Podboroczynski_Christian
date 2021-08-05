@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d76d2f9a96.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 <body>
     
-    <!--Heater-->
+   <heater><!--Heater-->
 
-    <nav>  <!--logo&Navigation-->
-        <ul>
-            <li><img src="photos/reservia-logo.png" alt="logo" /></li>
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Actvités</a></li>
-            <li><a href="#">S'inscrire</a></li>
-        </ul>
-    </nav>
+        <nav>  <!--logo&Navigation-->
+            <ul>
+                <li><img src="photos/reservia-logo.png" alt="logo" /></li>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Actvités</a></li>
+                <li><a href="#">S'inscrire</a></li>
+            </ul>
+        </nav>
        
-        <!--Recherche "Marseille, France"-->
-        <Table>
+        <Table><!--Recherche "Marseille, France"-->
             <tr>
                 <td><img src="images/localisation.png" alt="Localisation" /></td>
                 <i class="fa-solid fa-location-dot"></i>
@@ -32,21 +32,16 @@
                 <td><img src="images/rechercher" alt="Rechercher"></td>
             </tr>
         </Table>
-        <!--Filtres-->
-            <!--Economique-->
-            <i class="fa-solid fa-money-bill-wave"></i>
-            <!--Familial-->
-            <i class="fa-solid fa-child"></i>
-            <!--Romantique-->
-            <i class="fa-solid fa-heart"></i>
-            <!--Animaux autorisés-->
-            <i class="fa-solid fa-dog"></i>
+        <div>
+            
+        </div><!--Filtres-->
+    </heater>   
 
     <section>
 
        <h1>Hébergements à Marseille</h1><!--Bloc "Hébergements à Marseille"-->
        <p><!--Résultat 1 "Auberge la Cannebière"-->
-           <img src="images/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" />
+            <img src="images/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" />
        </p>
        <p><!--Résultat 2 "Hôtel du port"-->
             <img src="images/hotel-du-port.jpg" alt="Hôtel du port" />
@@ -81,9 +76,11 @@
             <img src="images/hotel-tout-bleu-et-blanc.jpg" alt="Hôtel tout bleu et blanc" />
         </p>
 
-    </section><!--Bloc "activités à Marseille"-->
+    </section>
  
-    <section>
+    <section><!--Bloc "activités à Marseille"-->
+
+        <h1>Activités à Marseille</h1>
 
         <p><!--Résultat 1 "Vieux port"-->
             <img src="images/vieux-port.jpg" alt="Vieux port" />
@@ -107,9 +104,21 @@
     </section>
 
     <footer><!--Pied de page-->
-        <!--Tableau 4 lignes et 3 col-->
-            <!--A propos-->
-            <!--Nos hébergements-->
+        <div><!--A propos-->
+            <h2>A propos</h2>
+            <p>fonctionnement du site<br/>Conditions générales de vente<br/>Données et confidentialité</p>
+
+        </div>
+        <div><!--Nos hébergements-->
+            <h2> Nos hébergements</h2>
+            <p>Carte qualité<br/>Soumettre votre hôtel</p>
+        </div>
+        <div>
+            <h2>Assistance</h2>
+            <p>Centre d'aide<br/>Nous contacter</p>
+        </div>
+            
+            
             <!--Assistance-->
         
     </footer>
