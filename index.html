@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/d76d2f9a96.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
+
 </head>
 <body>
-    <!--Header-->
-   <header class="header">
-        <nav>  <!--logo&Navigation-->
+   <header class="header"><!--Header-->
+        <nav id="navid">  <!--logo&Navigation-->
             <ul>
                 <li><img src="images/reservia-logo.png" alt="logo" /></li>
                 <li><a href="#Hébergement" class="active">Hébergements</a></li>
@@ -20,7 +20,7 @@
             </ul>
         </nav>
        
-        <Table><!--Recherche "Marseille, France"-->
+        <figure><!--Recherche "Marseille, France"-->
             <tr>
                 <td><img src="images/localisation.png" alt="Localisation" /></td>
                 <i class="fa-solid fa-location-dot"></i>
@@ -30,41 +30,85 @@
                 </td>
                 <td><img src="images/rechercher" alt="Rechercher"></td>
             </tr>
-        </Table>
+        </figure>
         <div>
             
         </div><!--Filtres-->
     </header>   
 
     <section>
-        <div class="box-hebergements"
-            <h1 id="Hébergements">Hébergements à Marseille</h1><!--Bloc "Hébergements à Marseille"-->
-            <p><!--Résultat 1 "Auberge la Cannebière"-->
-                <img src="images/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" />
-            </p>
-            <p><!--Résultat 2 "Hôtel du port"-->
-                <img src="images/hotel-du-port.jpg" alt="Hôtel du port" />
-            </p>
-            <p><!--Résultat 3 "Hôtel Les mouettes"-->
-                <img src="images/hotel-les-mouettes.jpg" alt="Hôtel les mouettes" /> 
-            </p>
-            <p><!--Résultat 4 "Hôtel de la mer"-->
-                <img src="images/hotel-de-la-mer.jpg" alt="Hôtel de la mer" />
-            </p>  
-            <p><!--Résultat 5 "Auberge Le Panier"-->
-                <img src="images/auberge-le-panier.jpg" alt="Auberge le Panier" />
-            </p>
-            <p><!--Résultat 6 "Hôtel chez Amina"-->
-                <img src="images/hotel-chez-amina.jpg" alt="Hôtel chez Amina" />
-            </p>
-            <h">Affichez plus</h><!--Afficher plus-->
-        </div>
+        <div class="hebergements">
+            <h1>Hébergements à Marseille</h1>
+                <div id="box-hebergements"><!--Bloc "Hébergements à Marseille"-->
+                <figure>
+                    <p><!--Résultat 1 "Auberge la Cannebière"-->
+                        <img src="images/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" />
+                    </p>
+                    <figcaption>
+                        Auberge la Cannebière<br/>
+                        Nuit à partir de 25€<br/>
+                        4 Etoiles
+                    </figcaption>
+                </figure>
+                <figure>
+                    <p><!--Résultat 2 "Hôtel du port"-->
+                        <img src="images/hotel-du-port.jpg" alt="Hôtel du port" />
+                    </p>
+                    <figcaption>
+                        Hôtel du port<br/>
+                        Nuit à partir de 52€<br/>
+                        5 Etoiles
+                    </figcaption>
+                </figure>
+                <figure>
+                    <p><!--Résultat 3 "Hôtel Les mouettes"-->
+                        <img src="images/hotel-des-mouettes.jpg" alt="Hôtel les mouettes" /> 
+                    </p>
+                    <figcaption>
+                        Hôtel des mouettes<br/>
+                        Nuit à partir de 76€<br/>
+                        4 Etoiles
+                    </figcaption>
+                </figure>
+                <figure>
+                    <p><!--Résultat 4 "Hôtel de la mer"-->
+                        <img src="images/hotel-de-la-mer.jpg" alt="Hôtel de la mer" />
+                    </p> 
+                    <figcaption>
+                        Hôtel de la mer<br/>
+                        Nuit à partir de 46€<br/>
+                        3 Etoiles
+                    </figcaption>
+                </figure> 
+                <figure>
+                    <p><!--Résultat 5 "Auberge Le Panier"-->
+                        <img src="images/auberge-le-panier.jpg" alt="Auberge le Panier" />
+                    </p>
+                    <figcaption>
+                        Auberge le Panier<br/>
+                        Nuit à partir de 46€<br/>
+                        4 Etoiles
+                    </figcaption>
+                </figure>
+                <figure>
+                    <p><!--Résultat 6 "Hôtel chez Amina"-->
+                        <img src="images/hotel-chez-amina.jpg" alt="Hôtel chez Amina" />
+                    </p>
+                    <figcaption>
+                        Hôtel chez Amira<br/>
+                        Nuit à partir de 96€<br/>
+                        5 Etoiles
+                    </figcaption>
+                </figure>
+                    
+                <h1>Affichez plus</h><!--Afficher plus-->
+        </div>       
     </section>
 
         
     <section><!--Bloc tableau "Les plus populaires"-->
-        <div class="box-populaires"
-            <h1>Les plus populaires</h1><i class="fa-solid fa-chart-line-up"></i>
+        <div class="box-populaires">
+            <h1>Les plus populaires<i class="fa-solid fa-chart-line-up"></i></h1>
             <p><!--Résultat 1 "Hôtel Le soleil du matin"-->
                 <img src="images/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le soleil du matin" />
             </p>
@@ -74,12 +118,13 @@
             <p><!--Résultat 3 "Hôtel Tout bleu et Blanc"-->
                 <img src="images/hotel-tout-bleu-et-blanc.jpg" alt="Hôtel tout bleu et blanc" />
             </p>
+            </div>
 
     </section>
  
     <section><!--Bloc "activités à Marseille"-->
-        <div class="box-activites"
-            <h1 id="Activités">Activités à Marseille</h1>
+        <div class="box-activites">
+            <h1> id="Activités">Activités à Marseille</h1>
 
             <p><!--Résultat 1 "Vieux port"-->
                 <img src="images/vieux-port.jpg" alt="Vieux port" />
@@ -99,7 +144,7 @@
             <p><!--Résultat 6 "Parc Longchamp"-->
                 <img src="images/parc-longchamp.jpg" alt="Parc Longchamp" />
             </p>
-
+        </div>
     </section>
 
     <footer><!--Pied de page-->
