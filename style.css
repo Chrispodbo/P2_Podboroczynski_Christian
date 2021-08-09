@@ -1,28 +1,90 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+}
+
+.footer{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    order: 2;
+}
 
 .header
 {
-display:flex;
-justify-content: space-between;
-align-items: flex-end;
+    flex-basis: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header, .galerie1, .item, .footer{
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.populaires{
+    flex-basis: 25%;
 }
 
 #navid
 {
-display:flex;
-flex-direction: row;
-align-self: flex-start;
+    display:flex;
+    flex-direction: row;
+    align-self: flex-start;
 }
 img:hover
 {
-border-left: 5px solid rgb(165, 162, 199);
-border-bottom: 5px solid rgb(165, 162, 199)
+    border-left: 5px solid rgb(165, 162, 199);
+    border-bottom: 5px solid rgb(165, 162, 199)
 }
-img{
+
+.figure1{
+    flex-basis: 250px;
+}
+
+img
+{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     border-spacing: 3px;
     border-color: white;
+    size: 20%;
+
+}
+.galerie1
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 70%;
+    color: black;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    
+}
+.item4
+{
+    border: 3px solid rvb(255, 255, 255)
+    width: 250px
+    height: 200px
+}
+plus
+{
+    align-content: 1;
+}
+
+@media screen and (max-width){
 
 }
