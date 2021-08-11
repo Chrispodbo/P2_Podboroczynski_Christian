@@ -11,17 +11,25 @@
 </head>
 <body class="container">
    <header class="entete"><!--Header-->
-        <nav id="navid">  <!--logo&Navigation-->
-            <ul>
-                <li><img src="images/reservia-logo.png" alt="logo" /></li>
-                <li><a href="#Hébergement" class="active">Hébergements</a></li>
-                <li><a href="#">Actvités</a></li>
-                <li><a href="#" class="active">S'inscrire</a></li>
-            </ul>
-        </nav>
+        <div class="menu"></div>
+            <table class="navig"> <!--logo&Navigation-->
+                <tr>
+                    <div class="logo">
+                        <td><img src="images/reservia-logo.png" alt="logo" /></td>
+                    </div>
+                    <td><a href="#" class="active">Hébergements</a></li>
+                    <td><a href="#">Actvités</a></td>
+                    <td><a href="#">S'inscrire</a></td>
+                </tr>
+            </table>    
+        </div>  
+        <article class="article">
+            <p><h2>Trouvez votre hébergement pour des vacances de rêve</h2></p>
+            <p><H4>En plein centre ville ou en pleine nature</H4></p>
+        </article>
        
-        <figure><!--Recherche "Marseille, France"-->
-            <tr>
+        <div class="recherche"><!--Recherche "Marseille, France"-->
+            <table>
                 <td><img src="images/localisation.png" alt="Localisation" /></td>
                 <i class="fa-solid fa-location-dot"></i>
                 <td>
@@ -29,24 +37,24 @@
                     <input type="Marseille, France" name="rechercher" />
                 </td>
                 <td><img src="images/rechercher" alt="Rechercher"></td>
-            </tr>
-        </figure>
+            </table>
+        </div>
         <div>
             <p>Ajouter ICI les filtres</p>
         </div><!--Filtres-->
     </header>   
 
     <div class="hebpop">
-        <section class="hebergement"><!--Hébergements à Marseille-->
-                <h1>Hébergements à Marseille</h1>
-                    <div class="galerie1">
+        <div class="hebpop1"><!--Hébergements à Marseille-->
+            <h1>Hébergements à Marseille</h1>
+                    <div class="galerie1">      
                         <div class="item1"> 
                             <figure class="figure1">
                                 <p><!--Résultat 1 "Auberge la Cannebière"-->
                                     <img src="images/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" />
                                 </p>
                                 <figcaption>
-                                    Auberge la Cannebière<br/>
+                                    <h4>Auberge la Cannebière</h4>
                                     Nuit à partir de 25€<br/>
                                     4 Etoiles
                                 </figcaption>
@@ -58,7 +66,7 @@
                                     <img src="images/hotel-du-port.jpg" alt="Hôtel du port" />
                                 </p>
                                 <figcaption>
-                                    Hôtel du port<br/>
+                                    <h4>Hôtel du port<br/></h4>
                                     Nuit à partir de 52€<br/>
                                     5 Etoiles
                                 </figcaption>
@@ -70,7 +78,7 @@
                                     <img src="images/hotel-des-mouettes.jpg" alt="Hôtel les mouettes" /> 
                                 </p>
                                 <figcaption>
-                                    Hôtel des mouettes<br/>
+                                    <h4>Hôtel des mouettes<br/></h4>
                                     Nuit à partir de 76€<br/>
                                     4 Etoiles
                                 </figcaption>
@@ -82,7 +90,7 @@
                                     <img src="images/hotel-de-la-mer.jpg" alt="Hôtel de la mer" />
                                 </p> 
                                 <figcaption>
-                                    Hôtel de la mer<br/>
+                                    <h4>Hôtel de la mer<br/></h4>
                                     Nuit à partir de 46€<br/>
                                     3 Etoiles
                                 </figcaption>
@@ -94,7 +102,7 @@
                                     <img src="images/auberge-le-panier.jpg" alt="Auberge le Panier" />
                                 </p>
                                 <figcaption>
-                                    Auberge le Panier<br/>
+                                    <h4>Auberge le Panier<br/></h4>
                                     Nuit à partir de 46€<br/>
                                     4 Etoiles
                                 </figcaption>
@@ -106,7 +114,7 @@
                                     <img src="images/hotel-chez-amina.jpg" alt="Hôtel chez Amina" />
                                 </p>
                                 <figcaption>
-                                    Hôtel chez Amira<br/>
+                                    <h4>Hôtel chez Amira<br/></h4>
                                     Nuit à partir de 96€<br/>
                                     5 Etoiles
                                 </figcaption>
@@ -114,11 +122,9 @@
                         </div> 
                     </div><br/>
                     <h4>Afficher plus</h4>       
-            </div>
-                 
-        </section>
-
-        <section class="populaires"><!--Bloc tableau "Les plus populaires"-->
+            </div>       
+        </div>
+        <div class="hebpop1"><!--Bloc tableau "Les plus populaires"-->
             <div class="galerie2">
                 <h1>Les plus populaires<i class="fa-solid fa-chart-line-up"></i></h1>
                 <div class="item2">
@@ -126,12 +132,12 @@
                         <p><!--Résultat 1 "Hôtel Le soleil du matin"-->
                             <img src="images/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le soleil du matin" />
                         </p>
-                        <figcaption>
-                            <h4>Hôtel le soleil du matin<br/></h4>
-                            Nuit à partir de 128€<br/>
-                            5 Etoiles
-                        </figcaption>
                     </figure>
+                    <figcaption>
+                        <h4>Hôtel le soleil du matin<br/></h4>
+                        Nuit à partir de 128€<br/>
+                        5 Etoiles
+                    </figcaption>
                 </div>
                 <div class="item2">
                     <figure class="figure2">
@@ -160,33 +166,73 @@
                     </figure>
                 </div>
             </div>
-
-        </section>
+        </div>
     </div>
-    <section class="activites"><!--"activités à Marseille"-->
+    <div class="activites"><!--"activités à Marseille"-->
         <div class="galerie3">
             <h1>Activités à Marseille</h1>
-
-            <p><!--Résultat 1 "Vieux port"-->
-                <img src="images/vieux-port.jpg" alt="Vieux port" />
-            </p>
-            <p><!--Résultat 2 "Fort de Pomègues"-->
-                <img src="images/fort-de-pomegues.jpg" alt="Fort de Pomègues" />
-            </p>
-            <p><!--Résultat 3 "Iles du Frioul"-->
-                <img src="images/iles-du-frioul.jpg" alt="Iles du Frioul" />
-            </p>
-            <p><!--Résultat 4 "Parc National des Calanques"-->
-                <img src="images/parc-national-des-calanques.jpg" alt="Parc National des Calanques" />
-            </p>
-            <p><!--Résultat 5 "Notre-Dame-de-la-Garde"-->
-                <img src="images/notre-dame-de-la-garde.jpg" alt="Notre Dame de la garde" />
-            </p>
-            <p><!--Résultat 6 "Parc Longchamp"-->
-                <img src="images/parc-longchamp.jpg" alt="Parc Longchamp" />
-            </p>
+            <div class="item3">
+                <figure class="figure3">
+                    <p><!--Résultat 1 "Vieux port"-->
+                        <img src="images/vieux-port.jpg" alt="Vieux port" />
+                    </p>
+                    <figcaption>
+                        <h4>Vieux Port</h4>
+                    </figcaption>
+                </figure>
+            </div>  
+            <div class="item3">
+                <figure class="figure3">
+                    <p><!--Résultat 2 "Fort de Pomègues"-->
+                        <img src="images/fort-de-pomegues.jpg" alt="Fort de Pomègues" />
+                    </p>
+                    <figcaption>
+                        <h4>Fort de Pomègues</h4>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="item3">
+                <figure class="figure3">
+                    <p><!--Résultat 3 "Iles du Frioul"-->
+                        <img src="images/iles-du-frioul.jpg" alt="Iles du Frioul" />
+                    </p>
+                    <figcaption>
+                        <h4>Îles du Frioul</h4>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="item3">
+                <figure class="figure3">
+                    <p><!--Résultat 4 "Parc National des Calanques"-->
+                        <img src="images/parc-national-des-calanques.jpg" alt="Parc National des Calanques" />
+                    </p>
+                    <figcaption>
+                        <h4>Parc National des Calanques</h4>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="item3">
+                <figure class="figure3">
+                    <p><!--Résultat 5 "Notre-Dame-de-la-Garde"-->
+                        <img src="images/notre-dame-de-la-garde.jpg" alt="Notre Dame de la garde" />
+                    </p>
+                    <figcaption>
+                        <h4>Notre Dame de la Garde</h4>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="item3">
+                <figure class="figure3">
+                    <p><!--Résultat 6 "Parc Longchamp"-->
+                        <img src="images/parc-longchamp.jpg" alt="Parc Longchamp" />
+                    </p>
+                    <figcaption>
+                        <h4>Notre Dame de la Garde</h4>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
-    </section>
+    </div>
 
     <footer class="footer"><!--Pied de page-->
         <div class="item4"><!--A propos-->
