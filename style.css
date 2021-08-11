@@ -1,90 +1,94 @@
 *, ::before, ::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 20;
 }
 
-body{
-    background: white;
-    height: 100vh;
+.container{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding: auto;
+    background:white;
+    border-left: 50px;
 }
 
-.footer{
+.entete{
+    flex-grow: 1;
+    width: 100%;
+}
+
+.hebpop{
     display: flex;
-    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1340px;
+    height: 750px;
+    background:white;
+    flex-grow: 1;
+}
+
+.hebergements{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    order: 2;
+    width: 880px;
+    height: 700px;
+    
 }
 
-.header
-{
-    flex-basis: 100%;
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
+.galerie1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 880px;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    border-radius: 20px;
 }
 
-.header, .galerie1, .item, .footer{
-    box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+.item1{
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-color: white;
+    border-width: 3px;
+}
+
+.item1 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .populaires{
-    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 425px;
+    height: 700px;
+    background-color: #F2F2F2;
 }
 
-#navid
-{
-    display:flex;
-    flex-direction: row;
-    align-self: flex-start;
-}
-img:hover
-{
-    border-left: 5px solid rgb(165, 162, 199);
-    border-bottom: 5px solid rgb(165, 162, 199)
-}
-
-.figure1{
-    flex-basis: 250px;
-}
-
-img
-{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-spacing: 3px;
-    border-color: white;
-    size: 20%;
-
-}
-.galerie1
-{
+.galerie2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 425px;
     justify-content: space-evenly;
-    max-width: 70%;
-    color: black;
-    background-color: cornflowerblue;
+    background-color: #f2f2f2;
     border-radius: 20px;
-    
-}
-.item4
-{
-    border: 3px solid rvb(255, 255, 255)
-    width: 250px
-    height: 200px
-}
-plus
-{
-    align-content: 1;
 }
 
-@media screen and (max-width){
+.item2{
+    width: 345px;
+    height: 145px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-color: white;
+    border-width: 3px;
+}
 
+.item1 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
