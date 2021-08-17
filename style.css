@@ -6,8 +6,24 @@
 
 *, ::before, ::after {
     box-sizing: border-box;
-    margin: 20;
-    padding: 20;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 120%;
+}
+
+.contenu{
+    justify-content:space-between;
+    background:white;
+    max-width: 1440px;
+    height: 100%;
+}
+
+.item0{
+    display: flex;
+    flex-flow: column;
 }
 
 .blue{
@@ -22,13 +38,20 @@
     font-weight: bold;
 }
 
-.h4{
-    font-size: 14px;
-}
-
 p{
     font-family: Raleway;
     font-size: 20px;
+}
+
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   color: rgb(0, 30, 128);
+}
+
+.titreext{
+    font-size: 200%;
+    margin-top: 40px;
 }
 
 .titreimg{
@@ -39,8 +62,7 @@ p{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-grow: 1;
-    width: 100%;
+    max-width: 1440px;
     margin-left: 50px;
 }
 
@@ -51,6 +73,7 @@ p{
 .menu{
     display: flex;
     flex-direction: row;
+    padding-left: 50opx;
     
 }
 
@@ -105,43 +128,36 @@ p{
     backgroud: white;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background:white;
-    margin-left: 50;
-}
-
 .hebpop{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 750px;
+    flex-grow: 1;
+    justify-content:space-between;
+    height: 625px;
+    padding-left: 50px;
 }
 
 .titre{
     font-size: 200%;
-    margin-top: 50px;
+    margin-top: 40px;
+    padding-left: 35px;
 }
 
 .normal{
-    font-size: 100%;
+    font-size: 120%;
     margin-left: 0px;
 }
 
 .affichezplus{
-    font-size: 150%;
-    margin-left: 40px;
-    margin-bottom: 50px;
+    font-size: 120%;
+    margin-left: 35px;
+    padding-top: 5%;
 }
 
 .hebergements{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
     height: 625px;
-    width: 900px;
+    max-width: 880px;
+    justify-content: center;
     background-color: #f2f2f2;
     border-top-left-radius: 20px;   
     border-top-right-radius: 20px;
@@ -153,9 +169,9 @@ p{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 900px;
-    justify-content:space-evenly;
-
+    max-width: 880px;
+    justify-content: space-evenly;
+    padding-top: 4%;
 }
 
 
@@ -168,7 +184,6 @@ p{
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
- 
 }
 
 .item1 figure{
@@ -180,7 +195,7 @@ p{
 .item1 img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 250px;
+    width: 240px;
     height: 120px;
 }
 
@@ -188,45 +203,57 @@ p{
     background-color: white;
     border-bottom-left-radius:  20px;
     border-bottom-right-radius: 20px;
-    width: 250px;
-    height: 120px;
+    width: 240px;
+    height: 80px;
+    padding-left: 15px;
+    padding-top: 10px;
 
 }
 
 .populaires{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    width: 25%;
-    height: 750px;
-    flex-grow: 1;
-    margin-right: 10px;
-}
-
-.item2{
-    width: 250px;
-    height: 200px;
-    border: 5px white solid;
+    width: 420px;
+    height: 625px;
+    background-color: #f2f2f2;
     border-top-left-radius: 20px;   
     border-top-right-radius: 20px;
     border-bottom-left-radius:  20px;
     border-bottom-right-radius:  20px;
 }
 
-.item2 figure{
+.galerie2{
     display: flex;
-    flex-flow: column;
-    padding: 10px;
-    margin: auto;
-    max-width: 230px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 420px;
+    justify-content:center;
+    padding-top: 4%;
+    padding-left: 6%;
+}
 
+.item2{
+    width: 345px;
+    height: 145px;
+    border: 5px white solid;
+    border-top-left-radius: 20px;   
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:  20px;
+    border-bottom-right-radius:  20px;
+    background-color: white;
 }
 
 .item2 img{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20Px;
-    max-width: 230px;
-    max-height: 110px;
+    max-width: 130px;
+    max-height: 135px;
+}
+
+.item2 figure{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    max-width: 340px;
+
 }
 
 .item2 figcaption{
@@ -236,27 +263,33 @@ p{
 
 .activites{
     display: flex;
-    flex-direction: column;
+    flex-direction: wrap;
     flex-wrap: wrap;
-    width: 100%;
+    flex-direction: row;
+    max-width: 1440px;
     height: 450px;
-    border-radius: 20px;
+    padding-left: 50px;
 }
 
 .galerie3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1340px;
     justify-content: space-evenly;
+    max-width: 1340px;
+    max-height: 450px;
     border-radius: 20px;
 }
 
+.colonne{
+    max-height: 450px;
+}
+
 .item3{
-    width: 25% auto;
     height: 450px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    justify-content:space-between;
 }
 
 .item3 img{
@@ -264,10 +297,20 @@ p{
     border-top-right-radius: 20px;
 }
 
-footer{
+.footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    background-color: #f2f2f2;
+    justify-content:space-around;
+    max-width: 1440px;
     height: 200px;
+}
+
+.item4{
+    padding-top: 50px;
+}
+
+.footertitre{
+    font-size: 150%;
 }
