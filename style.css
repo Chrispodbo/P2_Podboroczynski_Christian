@@ -262,11 +262,9 @@ a:hover /* Apparence au survol des liens */
 
 .activites{
     display: flex;
-    flex-direction: wrap;
     flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 1440px;
-    height: 450px;
+    max-width: 1340px;
+    max-height: 530px;
     padding-left: 50px;
     padding-top: 60px;
 }
@@ -279,8 +277,7 @@ a:hover /* Apparence au survol des liens */
 
 .galerie3{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: wrap;
     justify-content: space-evenly;
     max-width: 1340px;
     max-height: 450px;
@@ -288,7 +285,7 @@ a:hover /* Apparence au survol des liens */
 }
 
 .colonne{
-    max-height: 450px;
+    max-height: 530px;
 }
 
 .item3{
