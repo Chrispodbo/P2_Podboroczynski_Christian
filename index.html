@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/d76d2f9a96.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Reservia</title>
 
 </head>
@@ -28,44 +29,47 @@
                     </table>    
                 </div>  
                 <div class="article">
-                    <div class="titreext">Trouvez votre hébergement pour des vacances de rêve</div>
-                    <div class="normal">En plein centre ville ou en pleine nature</div>
+                    <div class="titreext">
+                        Trouvez votre hébergement pour des vacances de rêve
+                    </div><br/>
+                        <p>En plein centre ville ou en pleine nature</p><br/>
                 </div>
             
                 <div class="recherche"><!--Recherche "Marseille, France"-->
-                    <table class="rech">
-                        <td>
-                            <div class="local">
-                                <img src="images/localisation.png" alt="Localisation" /></td>
-                            </div> 
-                        <i class="fa-solid fa-location-dot"></i>
-                        <td>
-                            <form method ="post" action="traitement.php"></form>
-                            <input type="Marseille, France" name="rechercher" />
-                        </td>
-                        <td><img src="images/rechercher" alt="Rechercher"></td>
-                    </table>
+                    <form class="searchInput">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="search" class="search" placeholder='Marseille, France' aria-label="Champ_Recherche">
+            
+                        <button type="button" class="btn_recherche" aria-label="button de recherche">
+                            <span class="btnSpanRecherche">Recherche</span>
+                            <span class="searchIcon"><i class="fas fa-search"></i></span>
+                        </button>
+                    </form>
                 </div>
-                <div class="filtees"><!--Filtres-->
-                    <nav class="bottom-nav">
-                        <p>Filtres</p>
-                        <div class="bouton">
-                            <a href="#" class="menu-item">
-                            <img scr="images/billet.png" alt="Economique">
-                            <p>
+                <div class="filtres"><!--Filtres-->
+                    Filtres
+                    <nav class="bouton2nav">
+                        <div class="firtsBtn">
+                            <div class="liBtn" role="button">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>Economique</span>
+                            </div>
+                            <div class="liBtn" role="button">
+                                <i class="fas fa-child"></i>
+                                <span>Familial</span>
+                            </div>
                         </div>
-                        </a>
-                        <a href="#" class="menu-item">
-                            <img scr="images/enfant.png" alt="Familial">
-                        </a>
-                        <a href="#" class="menu-item">
-                            <img scr="images/coeur.png" alt="Romantique">
-                        </a>
-                        <a href="#" class="menu-item">
-                            <img scr="images/chien.png" alt="Animal autorisé">
-                        </a>
+                        <div class="liBtn" role="button">
+                            <i class="fas fa-heart"></i>
+                            <span>Romantique</span>
+                        </div>
+                        <div class="liBtn lastchild" role="button">
+                            <i class="fas fa-dog"></i>
+                            <span>Animaux autorisés</span>
+                        </div>
+                    </nav>
                 </div>
-                <div class="normal">Plus de 500 logements sont disponibles dans cette ville
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>    
         </div> 
@@ -80,21 +84,23 @@
                                     <figure class="figure1">
                                         <!--Résultat 1 "Auberge la Cannebière"-->
                                         <img src="images/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" />
-                                        <figcaption>
-                                            <div class="titreimg">
-                                                Auberge la Cannebière
-                                            </div>
-                                            <div class="tarif">
-                                                Nuit à partir de <span class="prix">25€</span>
-                                                <div>
-                                                    <span class="blue"><i class="fas fa-star"></i></span>
-                                                    <span class="blue"><i class="fas fa-star"></i></span>
-                                                    <span class="blue"><i class="fas fa-star"></i></span>
-                                                    <span class="blue"><i class="fas fa-star"></i></span>
-                                                    <span class="empty"><i class="fas fa-star"></i></span>
+                                        <aside class="decale">    
+                                            <figcaption>
+                                                <div class="titreimg">
+                                                    Auberge la Cannebière
                                                 </div>
-                                            </div>
-                                        </figcaption>
+                                                <div class="tarif">
+                                                    Nuit à partir de <span class="prix">25€</span>
+                                                    <div>
+                                                        <span class="blue"><i class="fas fa-star"></i></span>
+                                                        <span class="blue"><i class="fas fa-star"></i></span>
+                                                        <span class="blue"><i class="fas fa-star"></i></span>
+                                                        <span class="blue"><i class="fas fa-star"></i></span>
+                                                        <span class="empty"><i class="fas fa-star"></i></span>
+                                                    </div>
+                                                </div>
+                                            </figcaption>
+                                        </aside>
                                     </figure>
                                 </div>
                                 <div class="item1">
@@ -208,10 +214,10 @@
                     </div>              
                 </div>
                 <div class="populaires"><!--Bloc tableau "Les plus populaires"-->
-                    <div class="galerie2">
-                        <div class="titre">
+                    <div class="titre">
                         Les plus populaires<i class="fa-solid fa-chart-line-up"></i>
                         </div>
+                    <div class="galerie2">
                         <div class="item2">
                             <figure class="figure2"><!--Résultat 1 "Hôtel Le soleil du matin"-->
                                 <img src="images/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le soleil du matin" />
@@ -280,7 +286,7 @@
         </div>
         <div class="item0">
             <div class="activites"><!--"activités à Marseille"-->
-                    <div class="titre">
+                    <div class="titreext">
                     Activités à Marseille
                     </div>
                     <div class="galerie3">
@@ -356,7 +362,7 @@
                 </div>
                 <div class="item4"><!--Nos hébergements-->
                     <div class="footertitre">
-                        Nos hébergements
+                        <h4>Nos hébergements</h4>
                     </div>
                     <p>
                         Carte qualité<br/>Soumettre votre hôtel

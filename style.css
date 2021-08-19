@@ -1,8 +1,4 @@
-@font-face{
-    font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
-    src: url(fonts/Raleway-Regular.ttf);
-    font-style: normal;
-}
+
 
 *, ::before, ::after {
     box-sizing: border-box;
@@ -11,7 +7,8 @@
 }
 
 html{
-    font-size: 120%;
+    font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
 }
 
 .contenu{
@@ -24,6 +21,7 @@ html{
 .item0{
     display: flex;
     flex-flow: column;
+    max-width: 1440px;
 }
 
 .blue{
@@ -36,22 +34,18 @@ html{
 
 .prix{
     font-weight: bold;
+    font-size: 80%;
 }
 
 p{
     font-family: Raleway;
-    font-size: 20px;
+    font-size: 100%;
 }
 
 a:hover /* Apparence au survol des liens */
 {
    text-decoration: underline;
    color: rgb(0, 30, 128);
-}
-
-.titreext{
-    font-size: 200%;
-    margin-top: 40px;
 }
 
 .titreimg{
@@ -74,6 +68,7 @@ a:hover /* Apparence au survol des liens */
     display: flex;
     flex-direction: row;
     padding-left: 50opx;
+    padding-top: 30px;
     
 }
 
@@ -131,25 +126,28 @@ a:hover /* Apparence au survol des liens */
 .hebpop{
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    max-width: 1440px;
     justify-content:space-between;
     height: 625px;
     padding-left: 50px;
+    padding-top: 40px;
 }
 
 .titre{
-    font-size: 200%;
+    font-size: 140%;
+    font-weight: bold;
     margin-top: 40px;
     padding-left: 35px;
 }
 
 .normal{
-    font-size: 120%;
+    font-size: 110%;
     margin-left: 0px;
 }
 
 .affichezplus{
     font-size: 120%;
+    font-weight: bold;
     margin-left: 35px;
     padding-top: 5%;
 }
@@ -225,9 +223,9 @@ a:hover /* Apparence au survol des liens */
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 420px;
-    justify-content:center;
-    padding-top: 4%;
-    padding-left: 6%;
+    justify-content:space-between;
+    padding-top: 9%;
+    padding-left: 9%;
 }
 
 .item2{
@@ -236,8 +234,8 @@ a:hover /* Apparence au survol des liens */
     border: 5px white solid;
     border-top-left-radius: 20px;   
     border-top-right-radius: 20px;
-    border-bottom-left-radius:  20px;
-    border-bottom-right-radius:  20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-color: white;
 }
 
@@ -245,12 +243,12 @@ a:hover /* Apparence au survol des liens */
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20Px;
     max-width: 130px;
-    max-height: 135px;
+    max-height: 140px;
 }
 
 .item2 figure{
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     margin: auto;
     max-width: 340px;
 
@@ -269,6 +267,13 @@ a:hover /* Apparence au survol des liens */
     max-width: 1440px;
     height: 450px;
     padding-left: 50px;
+    padding-top: 60px;
+}
+
+.titreext{
+    font-size: 140%;
+    font-weight: bold;
+    margin-top: 40px;
 }
 
 .galerie3{
@@ -278,7 +283,7 @@ a:hover /* Apparence au survol des liens */
     justify-content: space-evenly;
     max-width: 1340px;
     max-height: 450px;
-    border-radius: 20px;
+    padding-top: 20px;
 }
 
 .colonne{
@@ -305,6 +310,7 @@ a:hover /* Apparence au survol des liens */
     justify-content:space-around;
     max-width: 1440px;
     height: 200px;
+    padding-top: 50px;
 }
 
 .item4{
@@ -312,5 +318,6 @@ a:hover /* Apparence au survol des liens */
 }
 
 .footertitre{
-    font-size: 150%;
+    font-size: 120%;
+    font-weight: bold;
 }
