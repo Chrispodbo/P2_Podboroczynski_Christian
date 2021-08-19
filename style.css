@@ -25,7 +25,8 @@ html{
 }
 
 .blue{
-    color: blue;
+    color: #0065FC;
+    image-rendering: auto;
 }
 
 .empty{
@@ -168,7 +169,7 @@ a:hover /* Apparence au survol des liens */
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 880px;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     padding-top: 4%;
 }
 
