@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/d76d2f9a96.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Reservia</title>
+    <style type="text/css"> a:link{text-decoration: none;}</style>
 </head>
 
     <!--Body-->
@@ -21,19 +22,22 @@
             </div>
             <!--Navigation-->
             <nav>
-                <ul>
-                    <div id="surligner">
-                        <li>Hébergements</li>
+                <ul id="nav-tete">
+                    <div class="surligner1">
+                        <li><a href="#hebergements-marseille">Hébergements</a></li>
                     </div>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
+                    <div class="surligner1">
+                        <li><a href="#activites-marseille">Activités</a></li>
+                    </div>
+                    <div class="surligner">
+                        <li><a href="#">S'inscrire</a></li>
+                    </div>
                 </ul>
             </nav>
         </header>
 
         <!--Main-->
         <main>
-
             <!--Section Présentation et Sélections-->
             <section class="present-select">
                 <!--Présentation-->
@@ -96,14 +100,14 @@
                     </div>
                 </id>
                 <!--Informations-->
-                <id class="info">
-                    <div>
+                <div id="info">
+                    <div id="info-icone">
                         <i class="fas fa-info-circle"></i>
                     </div>
                     <p>
                         Plus de 500 logements sont disponibles dans cette ville
                     </p>
-                </id>
+                </div>
             </section>
 
             <!--Section Hébergements et Populaires-->
@@ -111,11 +115,11 @@
                 <!--Section Hébergements à Marseille-->
                 <div id="hebergements">
                     <div id="texte-hebergements">
-                        <h2>Hébergements à Marseille</h2>
+                        <h2 id="hebergements-marseille">Hébergements à Marseille</h2>
                     </div>
                     <div id="galerie-hebergements">
                         <!--Résultat 1 "Auberge la Cannebière"-->
-                        <div class="item1">
+                        <div class="resultat1">
                             <figure class="auberge-la-cannebiere">
                                 <img src="images/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" />
                                 <figcaption>
@@ -136,7 +140,7 @@
                             </figure>
                         </div>
                         <!--Résultat 2 "Hôtel du port"-->
-                        <div class="item1">
+                        <div class="resultat1">
                             <figure class="hotel-du-port">
                                 <img src="images/hotel-du-port.jpg" alt="Hôtel du Port" />
                                 <figcaption>
@@ -157,7 +161,7 @@
                             </figure>
                         </div>
                         <!--Résultat 3 "Hôtel les Mouettes"-->
-                        <div class="item1">
+                        <div class="resultat1">
                             <figure class="hotel-les-mouettes">
                                 <img src="images/hotel-les-mouettes.jpg" alt="Hôtel les Mouettes" />
                                 <figcaption>
@@ -178,7 +182,7 @@
                             </figure>
                         </div>
                         <!--Résultat 4 "Hôtel de la mer"-->
-                        <div class="item1">
+                        <div class="resultat1">
                             <figure class="hotel-de-la-mer">
                                 <img src="images/hotel-de-la-mer.jpg" alt="Hôtel de la mer" />
                                 <figcaption>
@@ -199,7 +203,7 @@
                             </figure>
                         </div>
                         <!--Résultat 5 "Auberge le Panier"-->
-                        <div class="item1">
+                        <div class="resultat1">
                             <figure class="auberge-le-panier">
                                 <img src="images/auberge-le-panier.jpg" alt="Auberge le Panier" />
                                 <figcaption>
@@ -220,7 +224,7 @@
                             </figure>
                         </div>
                         <!--Résultat 6 "Hôtel chez Amina"-->
-                        <div class="item1">
+                        <div class="resultat1">
                             <figure class="hotel-chez-amina">
                                 <img src="images/hotel-chez-amina.jpg" alt="Hôtel chez Amina" />
                                 <figcaption>
@@ -252,13 +256,15 @@
                         <h2>
                             Les plus populaires
                         </h2>
-                        <i class="fas fa-chart-line"></i>
+                        <div id="tab">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                     </div>
                     <div id="galerie-populaires">
                         <!--Résultat 1 "Hôtel le soleil du matin"-->
-                        <div class="item2">
-                            <figure class="figure2">
-                                <img src="images/hotel-le-soleil-du-matin.jpg" alt="Hôtel le soleil du matin" />
+                        <div class="resultat2">
+                            <figure>
+                                <img src="images/hotel-le-soleil-du-matin.jpg" alt="Hôtel le soleil du matin"/>
                                 <figcaption>
                                     <span class="titreimg">
                                         Hôtel le soleil du matin
@@ -277,9 +283,9 @@
                             </figure>
                         </div>
                         <!--Résultat 2 "Au coeur de l'eau Chambre d'hôtes"-->
-                        <div class="item2">
-                            <figure class="figure2">
-                                <img src="images/au-coeur-de-leau.jpg" alt="Au coeur de l'eau Chambre d'hôtes" />
+                        <div class="resultat2">
+                            <figure>
+                                <img src="images/au-coeur-de-leau.jpg" alt="Au coeur de l'eau Chambre d'hôtes"/>
                                 <figcaption>
                                     <span class="titreimg">
                                         Au coeur de l'eau 
@@ -299,9 +305,9 @@
                             </figure>
                         </div>
                         <!--Résultat 3 "Hôtel tout bleu et blanc"-->
-                        <div class="item2">
-                            <figure class="figure2">
-                                <img src="images/hotel-tout-bleu-et-blanc.jpg" alt="Hôtel tout bleu et blanc" />
+                        <div class="resultat2">
+                            <figure>
+                                <img src="images/hotel-tout-bleu-et-blanc.jpg" alt="Hôtel tout bleu et blanc"/>
                                 <figcaption>
                                     <span class="titreimg">
                                         Hôtel tout bleu et blanc
@@ -326,23 +332,23 @@
             <!--Section Activités-->
             <section id="activites">
                 <div id="titre-activites">
-                    <h2>Activités à Marseille</h2>
+                    <h2 id="activites-marseille">Activités à Marseille</h2>
                 </div>
                 <!--Galerie Activités-->
                 <div id="galerie-activites">
-                    <div class="item3">
+                    <div class="resultat3">
                         <figure>
-                            <img src="images/vieux-port.jpg" alt="Vieux port" />
+                            <img src="images/vieux-port.jpg" alt="Vieux port"/>
                             <figcaption>
                                 <h3>Vieux Port</h3>
                             </figcaption>
                         </figure>
                     </div>
                     <!--Groupe Pomègues et Frioul-->
-                    <div class="item4">
+                    <div class="resultat4">
                         <div class="pomegues">
                             <figure>
-                                <img src="images/fort-de-pomegues.jpg" alt="Fort de Pomègues" />
+                                <img src="images/fort-de-pomegues.jpg" alt="Fort de Pomègues"/>
                                 <figcaption>
                                     <h3>Fort de Pomègues</h3>
                                 </figcaption>
@@ -350,26 +356,26 @@
                         </div>
                         <div class="frioul">
                             <figure>
-                                <img src="images/iles-du-frioul.jpg" alt="Iles du Frioul" />
+                                <img src="images/iles-du-frioul.jpg" alt="Iles du Frioul"/>
                                 <figcaption>
                                     <h3>Iles du Frioul</h3>
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
-                    <div class="item3">
+                    <div class="resultat3">
                         <figure>
-                            <img src="images/parc-national-des-calanques.jpg" alt="Parc National des Calanques" />
+                            <img src="images/parc-national-des-calanques.jpg" alt="Parc National des Calanques"/>
                             <figcaption>
                                 <h3>Parc National des Calanques</h3>
                             </figcaption>
                         </figure>
                     </div>
                     <!--Groupe Notre Dame et Longchamp-->
-                    <div class="item4">
-                        <div class="notredame">
+                    <div class="resultat4">
+                        <div class="notre-dame">
                             <figure>
-                                <img src="images/notre-dame-de-la-garde.jpg" alt="Notre Dame de la garde" />
+                                <img src="images/notre-dame-de-la-garde.jpg" alt="Notre Dame de la garde"/>
                                 <figcaption>
                                     <h3>Notre Dame de la Garde</h3>
                                 </figcaption>
@@ -377,7 +383,7 @@
                         </div>
                         <div class="longchamp">
                             <figure>
-                                <img src="images/parc-longchamp.jpg" alt="Parc Longchamp" />
+                                <img src="images/parc-longchamp.jpg" alt="Parc Longchamp"/>
                                 <figcaption>
                                     <h3>Parc Longchamp</h3>
                                 </figcaption>
@@ -393,26 +399,26 @@
                     <!--A propos-->
                     <div class="item5">
                         <div class="footer-titre">
-                            <h4>A propos</h4>
+                            <h3>A propos</h3>
                         </div>
-                        <div class="footer-texte"></div>
-                            <p>
-                                <a href="#">Fonctionnement du site</a><br/>
-                                <a href="#">Conditions générales de vente</a><br/>
-                                <a href="#">Données et confidentialité</a>
-                            </p>
+                        <div class="footer-texte">
+                            <div class="texte-change">
+                                <a href="#"><h4>Fonctionnement du site</h4></a>
+                                <a href="#"><h4>Conditions générales de vente</h4></a>
+                                <a href="#"><h4>Données et confidentialité</h4></a>
+                            </div>
                         </div> 
                     </div>
 
                     <!--Nos hébergements-->
                     <div class="item5">
                         <div class="footer-titre">
-                            <h4>Nos hébergements</h4>
+                            <h3>Nos hébergements</h3>
                         </div>
-                        <div class="footer-texte"></div>
+                        <div class="footer-texte">
                             <p>
-                                <a href="#">Carte qualité</a><br/>
-                                <a href="#">Soumettre votre hôtel</a>
+                                <a href="#"><h4>Carte qualité</h4></a>
+                                <a href="#"><h4>Soumettre votre hôtel</h4></a>
                             </p>
                         </div>
                     </div>
@@ -420,12 +426,12 @@
                     <!--Assistance-->
                     <div class="item5">
                         <div class="footertitre">
-                            <h4>Assistance</h4>
+                            <h3>Assistance</h3>
                         </div>
                         <div class="footer-texte">
                                 <p>
-                                    <a href="#">Centre d'aide</a><br />
-                                    <a href="#">Nous contacter</a>
+                                    <a href="#"><h4>Centre d'aide</h4></a>
+                                    <a href="#"><h4>Nous contacter</h4></a>
                                 </p>
                         </div>
                     </div>
