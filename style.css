@@ -17,10 +17,13 @@ h2{
 h3{
     font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 110%;
+    font-weight:bolder;
 }
 h4{
     font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100%;
+    font-size: 95%;
+    font-weight: 600;
+    color: rgb(71, 71, 71);
 }
 p{
     font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
@@ -136,6 +139,7 @@ nav li {
 }
 
 .rechercher{
+    color: white;
     border: none;
     background-color: #0065FC;
     border-radius: 0 17px 17px 0;
@@ -563,7 +567,8 @@ nav li {
     background-color: #f2f2f2;
     max-width: 1440px;
     height: 200px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+    margin-top: 40px;
 }
 
 #bloc-pied{
@@ -571,25 +576,11 @@ nav li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 45px;
     padding-left: 50px;
 }
 
-.item5{
-    
-}
-
 .footer-titre{
-    font-size: 120%;
-    font-weight: bold;
-}
-
-.footer-texte{
-    font-size: 100%;
-    opacity: 0,6;
-}
-
-.texte-change{
-    color: black;
-    text-decoration-line: none;
+    font-size: 18px;
+    font-weight: bolder;
 }
