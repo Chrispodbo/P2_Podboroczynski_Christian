@@ -1,7 +1,5 @@
 body{
     background-color: white;
-    height: 100vh;
-    width: 100%;
 }
 html{
     font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
@@ -53,7 +51,8 @@ p{
 }
 
 a{
-    stop-color: ;
+    text-decoration: none;
+    color: initial;
 }
 
 a:visited{
@@ -109,7 +108,7 @@ nav li {
 .present-select{
     max-width: 1440px;
     max-height: 300px;
-    background-color: beige;
+    background-color: rgb(206, 206, 66);
     margin-left: 50px;
 }
 
@@ -120,14 +119,31 @@ nav li {
 /*Recherche et Sélection*/
 .select{
     display: flex;
+    align-items: center;
     width: 420px;
     height: 50px;
-    justify-content: center;
 }
 
 .loc{
-    width: 50px;
-    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 17px 0 0 17px;
+    padding: 16px;
+
+}
+
+.saisie{
+    padding: 17px;
+}
+
+.rechercher{
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0 17px 17px 0;
+    padding: 17px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
     
 }
 /*Filtres*/
@@ -260,6 +276,7 @@ nav li {
     border-top-right-radius: 20px;
     width: 245px;
     height: 120px;
+    object-fit: cover;
 }
 
 .resultat1 figcaption{
@@ -332,8 +349,9 @@ nav li {
 
 .resultat2 figure{
     display: flex;
+    align-content: space-between;
     max-height: 135px;
-    max-width: 345px;
+    max-width: 275px;
     
 }
 
@@ -342,6 +360,7 @@ nav li {
     height: 135px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 .resultat2 figcaption{
@@ -395,6 +414,7 @@ nav li {
 .resultat3 img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .resultat3 figcaption{
@@ -435,6 +455,7 @@ nav li {
     width: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .pomegues figcaption{
@@ -466,6 +487,7 @@ nav li {
     width: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .frioul figcaption{
@@ -497,6 +519,7 @@ nav li {
     width: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .notre-dame  figcaption{
@@ -528,6 +551,7 @@ nav li {
     width: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .longchamp figcaption{
