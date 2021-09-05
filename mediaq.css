@@ -1,0 +1,40 @@
+@media screen (max-width: 1410px){
+    
+    /* Responsive */
+    
+    .present{
+        min-width: 170px;
+    }
+    
+    .bloc-filtres{
+        display: flex;
+        flex-direction:
+        align-items: center;
+    }
+    
+    #heberg-popul{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    
+    
+    #galerie-hebergements{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+@media screen (max-width: 1010px){
+    
+}
+
+@media screen (max-width: 1010px){
+    
+}
