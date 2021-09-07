@@ -1,24 +1,84 @@
-@media screen (max-width: 1410px){
-    
     /* Responsive */
-    
-    .present{
-        min-width: 170px;
-    }
-    
-    .bloc-filtres{
-        display: flex;
-        flex-direction:
-        align-items: center;
-    }
+
+@media screen and (max-width: 1350px){
     
     #heberg-popul{
         display: flex;
         flex-direction: column-reverse;
-        height: auto;
+        max-height: auto;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-left: 3%;
+    }
+
+    #populaires{
+        max-width: 95%;
+        max-height: 280px;
+        margin-bottom: 50px;
+    }
+
+    #galerie-populaires{
+        display: flex;
+        width: 1200px;
+        justify-content: space-between;
+        min-height: auto;
+        padding-right: 30px;
+        margin-bottom: 50px;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 1010px){
+    #ancres{
+        margin-left: 20%;
     }
     
+}
+
+@media screen and (max-width: 520px){
+
+    .bord{
+        display: flex;
+        flex-wrap: wrap;
+    }
     
+    .surligner1{
+        border-bottom: 2px solid white;
+    }
+
+    .surligner{
+
+    }
+    
+    .surligner1:hover{
+        border-bottom: 2px solid blue;
+    }
+
+    #ancres{
+        order: 1;
+        align-self: flex-start;
+    }
+
+    
+    #ancres{
+        margin-left: 10%;
+    }
+    
+    .present{
+        min-width: 180px;
+    }
+    
+    .bloc-filtres{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        min-height: 50px;
+    }
+
     #galerie-hebergements{
         display: flex;
         flex-direction: column;
@@ -27,14 +87,42 @@
 
 }
 
+@media screen and (max-width: 500px){ 
 
-
-
-
-@media screen (max-width: 1010px){
+    body{
+        max-width: 500px;
+    }
+   
+    .select{
+        display: flex;
+        align-items: center;
+        max-width: 15%;
+        height: 50px;
+    }
     
-}
-
-@media screen (max-width: 1010px){
+    .loc{
+        background-color: #F2F2F2;
+        border-radius: 15px 0 0 15px;
+        padding: 17px;
     
-}
+    }
+    
+    .saisie{
+        padding: 14px;
+        font-size: 18px;
+        font-weight: 700;
+        border-color: rgb(199, 198, 198);
+        border-width: thin;
+    }
+    
+    .rechercher{
+        color: white;
+        border: none;
+        background-color: #0065FC;
+        border-radius: 15px 15px 15px 15px;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 100%;
+        font-weight: 600;
+    }
+}   
