@@ -2,6 +2,17 @@
 
 @media screen and (max-width: 1350px){
     
+    
+    .bord{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1440px;
+        height: 80px;
+        margin-left: 3%;
+    }
+    
     #heberg-popul{
         display: flex;
         flex-direction: column-reverse;
@@ -11,20 +22,40 @@
         margin-left: 3%;
     }
 
-    #populaires{
-        max-width: 95%;
+    /* Responsive partie Populaire*/
+    #pop-res{
+        max-width: 1250px;
         max-height: 280px;
         margin-bottom: 50px;
+        background-color: #f2f2f2;
+        border-top-left-radius: 20px;   
+        border-top-right-radius: 20px;
+        border-bottom-left-radius:  20px;
+        border-bottom-right-radius:  20px;
     }
 
     #galerie-populaires{
         display: flex;
-        width: 1200px;
-        justify-content: space-between;
         min-height: auto;
         padding-right: 30px;
         margin-bottom: 50px;
     }
+
+    .resultat2{
+        margin-right: 30px;
+    }
+
+   /* Responsive partie Activités*/
+
+   #activites{
+
+   }
+
+   #galerie-activites{
+
+        display: flex;
+        flex-wrap: wrap;
+   }
 
 
 }
@@ -32,7 +63,7 @@
 
 
 
-@media screen and (max-width: 1010px){
+@media screen and (max-width: 1150px){
     #ancres{
         margin-left: 20%;
     }

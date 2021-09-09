@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    position: center;
 }
 html{
     font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
@@ -74,7 +75,7 @@ a:hover{
 
 #ancres{
     display: flex;
-    width: 260px;
+    max-width: 260px;
     justify-content: space-between;
     margin-left: 55%;
 }
@@ -207,15 +208,15 @@ a:hover{
 /*Section Hébergements et Populaires*/
 #heberg-popul{
     display: flex;
-    max-width: 1340px;
-    justify-content:space-between;
+    width: 1440px;
+    height: 625px;
     margin-top: 25px;
     margin-left: 3%;
 }
     /*Section Hébergements*/
 #hebergements{
     width: 880px;
-    height: 625px;
+    height: 100%;
     background-color: #f2f2f2;
     border-top-left-radius: 20px;   
     border-top-right-radius: 20px;
@@ -242,7 +243,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 245px;
+    width: 30%;
     height: 200px;
     border: 4px white solid;
     border-top-left-radius: 20px;   
@@ -258,14 +259,21 @@ a:hover{
 }
 
 .resultat1 figure{
-    width: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align align-items: center;
+    max-width: 100%;
     height: 200px;
+    margin-left: 0;
+    margin-right: 0;
+
 }
 
 .resultat1 img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 245px;
+    width: 100%;
     height: 120px;
     object-fit: cover;
 }
@@ -283,40 +291,42 @@ a:hover{
     padding-left: 40px;
 }
 
-
     /*Section Populaires*/
 #populaires{
-    width: 420px;
-    max-height: 625px;
+    max-width: 420px;
+    height: 625px;
     background-color: #f2f2f2;
     border-top-left-radius: 20px;   
     border-top-right-radius: 20px;
     border-bottom-left-radius:  20px;
     border-bottom-right-radius:  20px;
-
+    margin-left: 40px;
 }
 
 #entete-populaires{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 350px;
+    max-width: 80%;
     margin-left: 40px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-#galerie-populaires{
+.galerie-populaires{
+    display: flex;
+    flex-direction: column;
     max-height: 500px;
-    max-width: 345px;
+    max-width: 82%;
     margin-left: 33px;
 }
+
 
 .resultat2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 345px;
+    width: 100%;
     height: 135px;
     border: 4px white solid;
     background-color: white;
@@ -324,6 +334,7 @@ a:hover{
     border-top-right-radius: 20px;
     border-bottom-left-radius:  20px;
     border-bottom-right-radius:  20px;
+    margin-bottom: 30px;
 }
 
 .resultat2:hover{
@@ -334,8 +345,8 @@ a:hover{
 .resultat2 figure{
     display: flex;
     align-content: space-between;
-    max-height: 135px;
-
+    max-height: 100%;
+    margin-left: 0;
     
 }
 
@@ -348,7 +359,7 @@ a:hover{
 }
 
 .resultat2 figcaption{
-    width: 150px;
+    max-width: 200px;
     padding-left: 20px;
     padding-top: 20px;
 }
@@ -357,7 +368,7 @@ a:hover{
 
 #activites{
     max-width: 1440px;
-    height: 560px;
+    max-height: 560px;
     background-color: white;
 }
 
@@ -372,8 +383,8 @@ a:hover{
     justify-content:space-between;
     align-items: flex-start;
     margin-left: 50px;
-    width: 1340px;
-    height: 460px;
+    max-width: 1340px;
+    max-height: 460px;
 }
 
 .resultat3{
@@ -545,14 +556,15 @@ a:hover{
 /* Footer */
 #footer{
     background-color: #f2f2f2;
-    max-width: 1440px;
+    max-width: 100%;
     height: 200px;
     padding-bottom: 50px;
     margin-top: 40px;
 }
 
 #bloc-pied{
-    width: 1080px;
+    max-width: 70%;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
