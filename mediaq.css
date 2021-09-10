@@ -2,7 +2,11 @@
 
 @media screen and (max-width: 1350px){
     
-    
+    body{
+
+    }
+
+
     .bord{
         display: flex;
         flex-direction: column;
@@ -16,10 +20,22 @@
     #heberg-popul{
         display: flex;
         flex-direction: column-reverse;
-        max-height: auto;
         justify-content: space-between;
         margin-top: 50px;
-        margin-left: 3%;
+
+    }
+
+    /* Responsive partie Hébergements*/
+
+    #hebergements{
+        width: 66%;
+        height: 100%;
+        background-color: #f2f2f2;
+        border-top-left-radius: 20px;   
+        border-top-right-radius: 20px;
+        border-bottom-left-radius:  20px;
+        border-bottom-right-radius:  20px;
+
     }
 
     /* Responsive partie Populaire*/
@@ -61,8 +77,6 @@
 }
 
 
-
-
 @media screen and (max-width: 1150px){
     #ancres{
         margin-left: 20%;
@@ -70,7 +84,7 @@
     
 }
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 667px){
 
     .bord{
         display: flex;
