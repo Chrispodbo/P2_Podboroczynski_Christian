@@ -6,7 +6,6 @@
         position: relative;
     }
 
-
     .bord{
         display: flex;
         flex-direction: column;
@@ -22,7 +21,6 @@
         flex-direction: column-reverse;
         justify-content: space-between;
         margin-top: 50px;
-
     }
 
     /* Responsive partie Hébergements*/
@@ -71,7 +69,10 @@
         margin-right: 30px;
     }
 
-    #bloc-pied{}
+    #bloc-pied{
+        position: absolute;
+        top: 1800px;
+    }
 
 
    /* Responsive partie Activités*/
