@@ -1,5 +1,6 @@
 body{
     background-color: white;
+
 }
 html{
     font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
@@ -65,15 +66,22 @@ a:hover{
 
 .bord{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1420px;
+    min-width: 375px;
 	justify-content: space-between;
-
     max-width: 1440px;
     height: 80px;
     margin-left: 3%;
 }
 
+#logo{
+    margin-left: 0;
+}
+
 #ancres{
     display: flex;
+    align-items: center;
     max-width: 260px;
     justify-content: space-between;
     margin-left: 55%;
@@ -90,6 +98,7 @@ a:hover{
 .surligner{
     font-weight: bold;
     margin-right: 130px;
+    margin-top: 30px;
 }
 
 .surligner1:hover{
@@ -207,6 +216,7 @@ a:hover{
 /*Section Hébergements et Populaires*/
 #heberg-popul{
     display: flex;
+    justify-content: space-between;
     width: 1440px;
     height: 625px;
     margin-top: 25px;
@@ -235,7 +245,7 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    max-width: 800px;
+    width: 800px;
     height: 450px;
     justify-content:space-between;
     margin-left: 40px;
@@ -296,14 +306,17 @@ a:hover{
 
     /*Section Populaires*/
 #populaires{
+    width: 30%;
+    height: auto;
     max-width: 420px;
-    height: 625px;
+    min-width: 420px;
     background-color: #f2f2f2;
     border-top-left-radius: 20px;   
     border-top-right-radius: 20px;
-    border-bottom-left-radius:  20px;
-    border-bottom-right-radius:  20px;
-    margin-left: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
 }
 
 #entete-populaires{

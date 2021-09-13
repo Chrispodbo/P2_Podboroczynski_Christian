@@ -1,9 +1,9 @@
     /* Responsive */
 
-@media screen and (max-width: 1350px){
+@media screen and (max-width: 1400px){
     
     body{
-
+        position: relative;
     }
 
 
@@ -28,6 +28,8 @@
     /* Responsive partie Hébergements*/
 
     #hebergements{
+        position: absolute;
+        top: 1100px;
         width: 66%;
         height: 100%;
         background-color: #f2f2f2;
@@ -35,14 +37,20 @@
         border-top-right-radius: 20px;
         border-bottom-left-radius:  20px;
         border-bottom-right-radius:  20px;
+    }
+
+    #galerie-hebergements{
 
     }
 
     /* Responsive partie Populaire*/
-    #pop-res{
-        max-width: 1250px;
-        max-height: 280px;
-        margin-bottom: 50px;
+    #populaires{
+        position: absolute;
+        top: 420px;
+        margin-left: 0;
+        width: 80%;
+        height: auto;
+        max-width: 880px;
         background-color: #f2f2f2;
         border-top-left-radius: 20px;   
         border-top-right-radius: 20px;
@@ -52,19 +60,25 @@
 
     #galerie-populaires{
         display: flex;
-        min-height: auto;
-        padding-right: 30px;
-        margin-bottom: 50px;
+        height: auto;
+        width: 90%;
+        max-width: 1200px;
+        min-width: 375px;
+
     }
 
     .resultat2{
         margin-right: 30px;
     }
 
+    #bloc-pied{}
+
+
    /* Responsive partie Activités*/
 
    #activites{
-
+    position: absolute;
+    top: 1900px;
    }
 
    #galerie-activites{
