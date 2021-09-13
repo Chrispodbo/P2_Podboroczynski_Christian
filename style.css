@@ -214,8 +214,10 @@ a:hover{
 }
     /*Section Hébergements*/
 #hebergements{
-    width: 880px;
-    height: 100%;
+    width: 63%;
+    height: auto;
+    max-width: 880px;
+    min-width: 375px;
     background-color: #f2f2f2;
     border-top-left-radius: 20px;   
     border-top-right-radius: 20px;
