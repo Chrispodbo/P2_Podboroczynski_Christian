@@ -1,6 +1,6 @@
     /* Responsive */
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1390px){
     
     body{
         position: relative;
@@ -8,12 +8,18 @@
 
     .bord{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
-        max-width: 1440px;
-        height: 80px;
-        margin-left: 3%;
+        align-content: start;
+        width: 80%;
+        height: auto;
+        max-width: 1340px;
+        min-width: 375px;
+        height: 90px;
+    }
+
+    #ancres{
+        margin-left: 25%;
     }
     
     #heberg-popul{
@@ -29,7 +35,9 @@
         position: absolute;
         top: 1100px;
         width: 66%;
-        height: 100%;
+        height: 650px;
+        max-width: 880px;
+        min-width: 375px;
         background-color: #f2f2f2;
         border-top-left-radius: 20px;   
         border-top-right-radius: 20px;
@@ -47,7 +55,7 @@
         top: 420px;
         margin-left: 0;
         width: 80%;
-        height: auto;
+        height: 620px;
         max-width: 880px;
         background-color: #f2f2f2;
         border-top-left-radius: 20px;   
@@ -69,37 +77,60 @@
         margin-right: 30px;
     }
 
-    #bloc-pied{
-        position: absolute;
-        top: 1800px;
-    }
-
-
    /* Responsive partie Activités*/
 
    #activites{
     position: absolute;
-    top: 1900px;
+    top: 1730px;
+    width: 70%;
+    height: auto;
+    max-width: 1440px;
+
    }
 
    #galerie-activites{
-
         display: flex;
         flex-wrap: wrap;
    }
 
-
-}
-
-
-@media screen and (max-width: 1150px){
-    #ancres{
-        margin-left: 20%;
+   .resultat3{
+       margin-right: 20px;
+   }
+   
+   .resultat4{
+    margin-right: 20px;
     }
-    
+
+    /* Responsive partie Pied de page*/
+
+    #footer{
+        position: absolute;
+        top: 3500px;
+        width: 100%;
+    }
+
+    #bloc-pied{
+        width: 70%;
+    }
+
+
 }
 
-@media screen and (max-width: 667px){
+
+@media screen and (max-width: 1020px){
+
+    .bord{
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: start;
+        height: auto;
+        min-height: 90px;
+    }
+
+
+}
+
+@media screen and (max-width: 610px){
 
     .bord{
         display: flex;
@@ -145,6 +176,8 @@
         height: auto;
     }
 
+
+
 }
 
 @media screen and (max-width: 500px){ 
@@ -175,14 +208,17 @@
         border-width: thin;
     }
     
+    
     .rechercher{
+        
+    }
+    
+    .loupe{
         color: white;
         border: none;
         background-color: #0065FC;
-        border-radius: 15px 15px 15px 15px;
-        padding: 5px;
+        border-radius: 0 17px 17px 0;
+        padding: 17px;
         cursor: pointer;
-        font-size: 100%;
-        font-weight: 600;
     }
 }   

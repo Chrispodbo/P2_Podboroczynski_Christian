@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    margin-left: 3%;
 
 }
 html{
@@ -67,17 +68,12 @@ a:hover{
 .bord{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     max-width: 1420px;
-    min-width: 375px;
+    height: 100px;
 	justify-content: space-between;
-    max-width: 1440px;
-    height: 80px;
-    margin-left: 3%;
 }
 
-#logo{
-    margin-left: 0;
-}
 
 #ancres{
     display: flex;
@@ -89,7 +85,7 @@ a:hover{
 
 .surligner1{
     display: flex;
-    height: 76px;
+    height: 100px;
     text-align: center;
     align-items: center;
     padding-right: 30px; 
@@ -98,19 +94,17 @@ a:hover{
 .surligner{
     font-weight: bold;
     margin-right: 130px;
-    margin-top: 30px;
 }
 
 .surligner1:hover{
-    border-top: 2px solid blue;
+    border-top: 2px solid #0065FC;
 }
 
 
 /* Main */
 /*Présentation et Sélection*/
-.present-select{
-    margin-left: 3%;
-}
+
+
 
 /*Présentation*/
 .present{
@@ -217,22 +211,24 @@ a:hover{
 #heberg-popul{
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 1340px;
     height: 625px;
+    max-width: 1440px;
+    min-width: 375px;
     margin-top: 25px;
-    margin-left: 3%;
 }
     /*Section Hébergements*/
 #hebergements{
     width: 63%;
-    height: auto;
+    height: 625px;
     max-width: 880px;
-    min-width: 375px;
+    min-width: 880px;
     background-color: #f2f2f2;
     border-top-left-radius: 20px;   
     border-top-right-radius: 20px;
     border-bottom-left-radius:  20px;
     border-bottom-right-radius:  20px;
+ 
 }
 
 #texte-hebergements{
@@ -300,14 +296,15 @@ a:hover{
     padding-top: 10px;
 }
 
-#afficher-plus{
+#afficher{
     padding-left: 40px;
+    padding-top: 450px;
 }
 
     /*Section Populaires*/
 #populaires{
     width: 30%;
-    height: auto;
+    height: 625px;
     max-width: 420px;
     min-width: 420px;
     background-color: #f2f2f2;
@@ -315,8 +312,6 @@ a:hover{
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
-
 }
 
 #entete-populaires{
@@ -383,22 +378,22 @@ a:hover{
 /*Section Activités*/
 
 #activites{
-    max-width: 1440px;
-    max-height: 560px;
+    width: 1340;
+    height: auto;
+    max-width: 1340px;
+    min-width: 375px;
     background-color: white;
 }
 
 
 #titre-activites{
     padding-top: 30px;
-    padding-left: 50px;
 }
 
 #galerie-activites{
     display: flex;
     justify-content:space-between;
     align-items: flex-start;
-    margin-left: 50px;
     max-width: 1340px;
     max-height: 460px;
 }
