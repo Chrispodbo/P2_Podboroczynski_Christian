@@ -127,6 +127,7 @@
         min-height: 90px;
     }
 
+    .
 
 }
 
@@ -209,16 +210,5 @@
     }
     
     
-    .rechercher{
-        
-    }
     
-    .loupe{
-        color: white;
-        border: none;
-        background-color: #0065FC;
-        border-radius: 0 17px 17px 0;
-        padding: 17px;
-        cursor: pointer;
-    }
 }   
