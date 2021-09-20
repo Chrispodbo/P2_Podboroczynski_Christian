@@ -34,10 +34,8 @@
     #hebergements{
         position: absolute;
         top: 1100px;
-        width: 66%;
+        width: 880px;
         height: 650px;
-        max-width: 880px;
-        min-width: 375px;
         background-color: #f2f2f2;
         border-top-left-radius: 20px;   
         border-top-right-radius: 20px;
@@ -45,11 +43,8 @@
         border-bottom-right-radius:  20px;
     }
 
-    #galerie-hebergements{
-
-    }
-
     /* Responsive partie Populaire*/
+
     #populaires{
         position: absolute;
         top: 420px;
@@ -64,15 +59,6 @@
         border-bottom-right-radius:  20px;
     }
 
-    #galerie-populaires{
-        display: flex;
-        height: auto;
-        width: 90%;
-        max-width: 1200px;
-        min-width: 375px;
-
-    }
-
     .resultat2{
         margin-right: 30px;
     }
@@ -81,7 +67,7 @@
 
    #activites{
     position: absolute;
-    top: 1730px;
+    top: 1750px;
     width: 70%;
     height: auto;
     max-width: 1440px;
@@ -105,7 +91,7 @@
 
     #footer{
         position: absolute;
-        top: 3500px;
+        top: 2800px;
         width: 100%;
     }
 
