@@ -1,6 +1,5 @@
 body{
     background-color: white;
-    margin-left: 3%;
     position: center;
 
 }
@@ -65,16 +64,15 @@ a:hover{
 }
 
 /* Header */
-
-.bord{
+.entete{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     max-width: 1420px;
     height: 100px;
+    margin-left: 50px;
 	justify-content: space-between;
 }
-
 
 #ancres{
     display: flex;
@@ -103,15 +101,23 @@ a:hover{
 
 
 /* Main */
+
+#corps{
+    margin-left: 50px;
+}
+
 /*Présentation et Sélection*/
 
-
+#present-select{
+    width: 950px;
+}
 
 /*Présentation*/
 .present{
     padding-bottom: 15px;
     min-width: 170px;
 }
+
 /*Recherche et Sélection*/
 .select{
     display: flex;
@@ -144,21 +150,22 @@ a:hover{
     cursor: pointer;
     font-size: 100%;
     font-weight: 600;
-}
-    
+}  
 
 /* Filtres */
 .bloc-filtres{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    max-width: 1000px;
+    width: 1440px;
 }
 
 #les-filtres{
     display: flex;
     flex-wrap: wrap;
-    height: 50px;
+    width: 80%;
+    height: auto;
+    max-width: 950px;
+    min-width: 300px;
 }
 
 .marge-filtres{
@@ -241,10 +248,15 @@ a:hover{
     flex-wrap: wrap;
     align-items: flex-start;
     width: 800px;
-    height: 450px;
+    height: 500px;
     justify-content:space-between;
     margin-left: 40px;
     position: absolute;
+}
+
+.groupe22{
+    display: flex;
+    flex-direction: column;
 }
 
 .resultat1{
@@ -259,6 +271,7 @@ a:hover{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0 0 15px rgb(182, 209, 218);
+    margin-bottom: 20px;
 }
 
 .resultat1:hover{
@@ -300,7 +313,7 @@ a:hover{
     padding-top: 450px;
 }
 
-    /*Section Populaires*/
+/*Section Populaires*/
 #populaires{
     width: 30%;
     height: 625px;
