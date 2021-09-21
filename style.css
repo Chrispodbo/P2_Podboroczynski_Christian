@@ -156,16 +156,13 @@ a:hover{
 .bloc-filtres{
     display: flex;
     align-items: center;
-    width: 1440px;
+    width: 1250px;
 }
 
 #les-filtres{
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    height: auto;
-    max-width: 950px;
-    min-width: 300px;
 }
 
 .marge-filtres{
@@ -586,7 +583,7 @@ a:hover{
 }
 
 #bloc-pied{
-    max-width: 50%;
+    max-width: 60%;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;

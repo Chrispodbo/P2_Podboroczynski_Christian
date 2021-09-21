@@ -37,9 +37,9 @@
     
 /* Main */
 
-#corps{
+    #corps{
     margin-left: 40px;
-}
+    }
     /* Responsive partie Hébergements*/
 
     #hebergements{
@@ -92,6 +92,7 @@
 
    .resultat3{
        margin-right: 20px;
+       margin-top: 20px;
    }
    
    .resultat4{
@@ -107,61 +108,34 @@
     }
 
     #bloc-pied{
-        width: 70%;
-    }
-
-    .bord{
-        display: flex;
-        flex-wrap: nowrap;
-        align-content: start;
-        height: auto;
-        min-height: 90px;
+        width: 800px;
     }
 
 }
 
-@media screen and (max-width: 940px){
-
-    .entete{
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 30px;
-    }
-    
-    .surligner1{
-        border-bottom: 2px solid white;
-    }
+@media screen and (max-width: 1000px){
 
     .surligner{
-
+        margin-right: 0px;
     }
     
-    .surligner1:hover{
-        border-bottom: 2px solid blue;
-    }
 
     #ancres{
-        order: 1;
-        align-self: flex-start;
+        margin-left: 10px;
     }
 
-    #ancres{
-        margin-left: 10%;
-    }
-    
     .present{
         min-width: 180px;
     }
     
-    #les-filtres{
+    .bloc-filtres{
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        min-height: 50px;
-        width: 100%;
-        height: auto;
-        max-width: 880px;
-        min-width: 375px;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+
+    #les-filtres{
+       max-width: 80%;
     }
 
     #galerie-hebergements{
@@ -179,7 +153,6 @@
         justify-content:space-between;
 
     }
-
     
 /* Main */
 
@@ -197,13 +170,45 @@
         margin-left: 30px;
     }
 
-
 }
 
-@media screen and (max-width: 500px){ 
+@media screen and (max-width: 600px){ 
+   
+    .entete{
+        display: flex;
+        justify-content:left;
+        margin-left: 10px;
+        margin-bottom: 50px;
 
-    body{
-        max-width: 500px;
+    }
+
+    #logo{
+        padding-right: 150px;
+    }
+
+    #ancres{
+        order: 1;
+        align-self: flex-start;
+        margin-left: 10%;
+    }
+
+    .surligner1{
+        text-align: center;
+    }
+
+    .surligner1:hover{
+        height: 50px;
+        border-bottom: 4px solid blue;
+        border-top: 2px solid white;
+    }
+
+    .present{
+        width: 300px;
+        white-space: normal;
+    }
+
+    #corps{
+        margin-left: 10px;
     }
    
     .select{
@@ -213,21 +218,20 @@
         height: 50px;
     }
     
-    .loc{
-        background-color: #F2F2F2;
-        border-radius: 15px 0 0 15px;
+    .rechercher{
+        color: white;
+        border: none;
+        background-color: #0065FC;
+        border-radius: 0 17px 17px 0;
         padding: 17px;
-    
+        cursor: pointer;
+        font-size: 100%;
+        font-weight: 600;
+    } 
+
+    #les-filtres{
+        
     }
-    
-    .saisie{
-        padding: 14px;
-        font-size: 18px;
-        font-weight: 700;
-        border-color: rgb(199, 198, 198);
-        border-width: thin;
-    }
-    
-    
+
     
 }   
