@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaq.css" />
     <script src="https://kit.fontawesome.com/d76d2f9a96.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"/>
     <title>Reservia</title>
     <style type="text/css"> a:link{text-decoration: none;}</style>
     
@@ -49,18 +50,18 @@
                 </div>
                 <!--Recherche_Sélection-->
                 <div class="select">
-                    <div class="loc">
+                    <div id="info-icone">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <div>
-                        <input class="saisie" type="search" name="recherche" placeholder="Marseille, France"/>
-                    </div>
-                    <div>
-                        <button type="submit" class="rechercher">
-                            <span class="text-button">Rechercher</span>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
+                    <form id="formulaire" method="post" action="#">
+                        <input
+                          id="ville"
+                          type="text"
+                          name="ville"
+                          placeholder="Marseille, France"/>
+                        <input id="rechercher" type="button" value="Rechercher" />
+                        <button id="loupe"><i class="fas fa-search"></i></button>
+                    </form>
                 </div>
                 <!--Filtres_Sélection-->
                 <div class="bloc-filtres marge-filtres">
@@ -105,7 +106,7 @@
                 <!--Informations-->
                 <div id="info">
                     <div id="info-icone">
-                        <i class="fas fa-info-circle"></i>
+                        <i class="fas fa-info iconei"></i>
                     </div>
                     <p>
                         Plus de 500 logements sont disponibles dans cette ville

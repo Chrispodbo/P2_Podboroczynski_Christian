@@ -27,13 +27,13 @@
     /* Main */
 
     /* Filtres */
-
-    #heberg-popul{
+    .bloc-filtres{
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        margin-top: 50px;
+        flex-direction: column;
+        align-items:flex-start;
     }
+
+
     
 /* Main */
 
@@ -56,13 +56,21 @@
 
     /* Responsive partie Populaire*/
 
+    #heberg-popul{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
     #populaires{
         position: absolute;
         top: 480px;
-        margin-left: 0;
+        margin-left: 5;
         width: 80%;
         height: 620px;
         max-width: 880px;
+        min-width: 350px;
         background-color: #f2f2f2;
         border-top-left-radius: 20px;   
         border-top-right-radius: 20px;
@@ -79,6 +87,7 @@
    #activites{
     position: absolute;
     top: 1810px;
+    margin-left: 10px;
     width: 70%;
     height: auto;
     max-width: 1440px;
@@ -119,7 +128,6 @@
         margin-right: 0px;
     }
     
-
     #ancres{
         margin-left: 10px;
     }
@@ -128,14 +136,10 @@
         min-width: 180px;
     }
     
-    .bloc-filtres{
-        display: flex;
-        flex-direction: column;
-        align-items:flex-start;
-    }
+
 
     #les-filtres{
-       max-width: 80%;
+       width: 80%;
     }
 
     #galerie-hebergements{
@@ -179,7 +183,6 @@
         justify-content:left;
         margin-left: 10px;
         margin-bottom: 50px;
-
     }
 
     #logo{
@@ -210,27 +213,26 @@
     #corps{
         margin-left: 10px;
     }
-   
-    .select{
-        display: flex;
-        align-items: center;
-        max-width: 15%;
-        height: 50px;
+    
+    /* Disparition bouton Rechercher */
+    #rechercher{
+        display: none;
+    }
+
+    /* Apparition bouton Rechercher */
+    #loupe{
+        display: block;
+        padding: 20px;
+    }
+
+    #ville{
+        border-color: transparent;
     }
     
-    .rechercher{
-        color: white;
-        border: none;
-        background-color: #0065FC;
-        border-radius: 0 17px 17px 0;
-        padding: 17px;
-        cursor: pointer;
-        font-size: 100%;
-        font-weight: 600;
-    } 
-
-    #les-filtres{
-        
+    #formulaire{
+        border: 1px solid #f2f2f2;
+        border-right: transparent;
+        border-radius: 0 10px 10px 0;
     }
 
     
