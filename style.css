@@ -139,13 +139,19 @@ a:hover{
     color: black;
     font-weight: bold;
 }
+#ville{
+    width: 200px;
+    font-size: 16px;
+}
   
 #rechercher{
     background-color: #0065fc;
     color: white;
+    font-size: 16px;
+    font-weight: bolder;
     border: 1px solid #0065fc;
     border-radius: 0 15px 15px 0;
-    padding: 17px;
+    padding:  0 25px 0 25px;
 }
   
 #rechercher:hover{
@@ -165,18 +171,15 @@ a:hover{
 .bloc-filtres{
     display: flex;
     align-items: center;
-    width: 1300px;
-}
-
-.marge-filtres{
+    width: 1000px;
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
 #les-filtres{
-    width: 70%;
     display: flex;
-
+    justify-content: space-between;
+    height: auto;
 }
 
 .marge-titre{
