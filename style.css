@@ -1,6 +1,6 @@
 body{
     background-color: white;
-    margin: auto;
+
 }
 html{
     font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
@@ -251,6 +251,7 @@ a:hover{
     border-top-right-radius: 20px;
     border-bottom-left-radius:  20px;
     border-bottom-right-radius:  20px;
+
 }
 
 #texte-hebergements{

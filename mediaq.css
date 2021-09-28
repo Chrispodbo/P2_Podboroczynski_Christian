@@ -119,7 +119,6 @@
 
 }
 
-
 @media screen and (max-width: 1000px){
 
    /* Entete */
@@ -175,7 +174,7 @@
         position: absolute;
         top: 1300px;
         width: 80%;
-        height: auto;
+        height: 1550px;
     }
 
     #galerie-hebergements{
@@ -202,14 +201,14 @@
 
     #afficher{
         padding-left: 40px;
-        padding-top: 520px;
+        padding-top: 1370px;
     }
 
     /* Activités */
 
     #activites{
         position: absolute;
-        top: 2800px;
+        top: 2850px;
         margin-left: 10px;
         width: 80%;
         height: auto;
@@ -263,21 +262,21 @@
 
     .surligner1{
         text-align: center;
+        justify-content: center;
     }
 
     .surligner1:hover{
         height: 50px;
-        border-bottom: 4px solid blue;
+        border-bottom: 2px solid blue;
         border-top: 2px solid white;
     }
 
     .present{
         width: 300px;
+        margin-left: 20px;
     }
 
-    #corps{
-        margin-left: 10px;
-    }
+
     
     /* Disparition bouton Rechercher */
     #rechercher{
@@ -335,17 +334,17 @@
     }
 
     #hebergements{
-        background-color: rosybrown;
+        background-color: white;
         position: absolute;
-        top: 1400px;
+        top: 1350px;
         width: 90%;
         width: 400px;
-        height: auto;
+        height: 1550Px;
         margin-left: 10px;
     }
 
     #texte-hebergements{
-        padding-left: 30px;
+        padding-left: 10px;
     }
 
     #galerie-hebergements{
@@ -366,8 +365,8 @@
 
     
     #afficher{
-        padding-left: 40px;
-        padding-top: 1800px;
+        padding-left: 0px;
+        padding-top: 1370px;
     }
 
     #populaires{
@@ -382,6 +381,10 @@
         border-bottom-right-radius: 0px;
     }
 
+    #entete-populaires{
+        margin-left: 20px;
+    }
+
     .resultat2{
         width: 300px;
     }
@@ -392,16 +395,36 @@
 
     #activites{
         position: absolute;
-        top: 3500px;
+        top: 2870px;
     }
 
     .resultat3{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        width: 330px;
+    }
+
+   .resultat3 img{
+        width: 330px;
+        height: 390px;
+    }
+
+    .smart{
+        width: 330px;
+        margin-left: 20px;
+    }
+
+    .resultat4{
+        height: 435px;
+    }
+
+   .resultat4 img{
+        width: 330px;
+        height: 
     }
 
     #footer{
         position: absolute;
-        top: 5550px;
+        top: 4880px;
         height: 500px;
     }
 
