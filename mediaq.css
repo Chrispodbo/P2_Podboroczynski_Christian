@@ -89,7 +89,6 @@
         width: 80%;
         height: auto;
         max-width: 1440px;
-
    }
 
    #galerie-activites{
@@ -120,6 +119,7 @@
 
 }
 
+
 @media screen and (max-width: 1000px){
 
    /* Entete */
@@ -147,12 +147,12 @@
     /* Filtres */
 
     .bloc-filtres{
-        height: auto;
+        width: 650px;
     }
     
     #les-filtres{
         flex-wrap: wrap;
-        height: ;
+        padding-bottom: 20px;
     }
     
     /* Main */
@@ -160,11 +160,22 @@
         margin-left: 4%;
     }
 
-    /* Hébergements */
+    /* Les plus populaires */
+    #populaires{
+        position: absolute;
+        top: 630px;
+    }
 
+    .galerie-populaires{
+        margin-left: 20px;
+    }
+
+    /* Hébergements */
     #hebergements{
-        width: 90%;
-        height: 1100px;
+        position: absolute;
+        top: 1300px;
+        width: 80%;
+        height: auto;
     }
 
     #galerie-hebergements{
@@ -179,27 +190,50 @@
     }  
 
     .resultat1{
-        width: 280px;
+        width: 350px;
         height: 200px;
-    }    
+        background-color: white;
+        justify-content: flex-start;
+    }
+    
+    .resultat1 img{
+        width: 350px;
+    }
 
     #afficher{
-    padding-left: 40px;
-    padding-top: 920px;
+        padding-left: 40px;
+        padding-top: 520px;
     }
 
     /* Activités */
 
     #activites{
         position: absolute;
-        top: 2300px;
+        top: 2800px;
         margin-left: 10px;
         width: 80%;
         height: auto;
         max-width: 1440px;
+    }
+
     .groupe22{
         display: flex;
         justify-content:space-between;
+    }
+
+    #footer{
+        position: absolute;
+        top: 3900px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 820px){
+
+    #footer{
+        position: absolute;
+        top: 4800px
     }
 
 }
@@ -250,7 +284,7 @@
         display: none;
     }
 
-    /* Apparition bouton Rechercher */
+    /* Apparition bouton loupe */
     #loupe{
         display: block;
         padding: 20px;
@@ -266,27 +300,118 @@
         border-radius: 0 10px 10px 0;
     }
 
+    .bloc-filtres{
+        width: 380px;
+        margin-bottom: 0px;
+    }
+
+    #les-filtres{
+        padding-bottom: 20px;
+    }
+
+    .bouton-filtres{
+        margin-bottom: 10px;
+    }
+
+    .texte-filtres{
+        margin-left: 8px;
+        margin-right: 15px;
+    }
+
+    #info{
+        width: 360px;
+    }
+
+    #plus{
+        padding-left: 20px;
+    }
+
+    #corps{
+        margin-left: 0;
+    }
+
+    #heberg-popul{
+        margin-left: 0;
+    }
+
     #hebergements{
+        background-color: rosybrown;
         position: absolute;
-        top: 1250px;
+        top: 1400px;
         width: 90%;
+        width: 400px;
         height: auto;
+        margin-left: 10px;
+    }
+
+    #texte-hebergements{
+        padding-left: 30px;
+    }
+
+    #galerie-hebergements{
+        min-width: 350px;
+        margin-left: 10px;
+    }  
+
+    .resultat1{
+        width: 300px;
+        height: 200px;
+        background-color: white;
+        justify-content: flex-start;
+    }
+    
+    .resultat1 img{
+        width: 300px;
+    }
+
+    
+    #afficher{
+        padding-left: 40px;
+        padding-top: 1800px;
     }
 
     #populaires{
         position: absolute;
-        top: 580px;
-        margin-left: 5;
+        top: 730px;
+        margin-left: 0;
         width: 80%;
         height: 620px;
-  
+        border-top-left-radius: 0px;   
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
+
+    .resultat2{
+        width: 300px;
+    }
+
     .resultat2 figcaption{
         padding-top: 0px;
     }
 
+    #activites{
+        position: absolute;
+        top: 3500px;
+    }
 
+    .resultat3{
+        margin-bottom: 50px;
+    }
 
+    #footer{
+        position: absolute;
+        top: 5550px;
+        height: 500px;
+    }
 
+    #bloc-pied{
+        padding-left: 50px;
+        max-width: 70%;
+    }
+
+    .item5{
+        margin-bottom: 20px;
+    }
 
 }   
